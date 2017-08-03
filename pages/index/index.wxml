@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  	<view>test:{{test}}</view>
+  	<button type="primary" bindtap="toLog">to pageA</button>
+</view>
