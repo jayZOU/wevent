@@ -7,13 +7,8 @@ class Event{
             console.error('订阅事件失败');
             return ;
         }
-        if(this.__event[name] && this.__event[name].list){
-            this.__event[name].list.push(cb)
-        }else{
-            this.__event[name] = {};
-            this.__event[name].list = [cb]
-        }
-        this.__event[name].data = data || '';
+        (this.__event[name] = this.__event[name] || {list: []}).list.push(cb);
+        this.__event[name].data = data || undefined;
     }
     emit(name, ...params){
         let cache = this.__event[name];
