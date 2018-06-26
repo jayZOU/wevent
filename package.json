@@ -17,7 +17,7 @@
     "mocha": "^4.1.0"
   },
   "scripts": {
-    "mocha": "mocha test/*.test.js --recursive --require babel-polyfill --compilers js:babel-register"
+    "test": "mocha test/*.test.js --recursive --require babel-polyfill --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
