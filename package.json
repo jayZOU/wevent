@@ -1,0 +1,35 @@
+{
+  "name": "wevent",
+  "version": "2.0.2",
+  "description": "微信小程序跨页面通信库",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.0.0",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  },
+  "scripts": {
+    "mocha": "mocha test/*.test.js --recursive --require babel-polyfill --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayZOU/wevent.git"
+  },
+  "keywords": [
+    "event"
+  ],
+  "author": "jayzou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayZOU/wevent/issues"
+  },
+  "homepage": "https://github.com/jayZOU/wevent#readme"
+}

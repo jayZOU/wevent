@@ -1,11 +1,16 @@
 //index.js
 //获取应用实例
 const app = getApp()
+
+
 Page({
     data: {
         test: 1
     },
     onLoad: function() {
+        let cur = getCurrentPages();
+
+        console.log(cur);
         app.event.on('upData', this.upData);
     },
     upData: function(num, num2) {

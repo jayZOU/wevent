@@ -57,4 +57,8 @@
 事件注销，不传入name为注销所有事件   
 `app.event.off('upData');`   
 
+**get([name])**
+获取事件引用和数据
+`app.event.get('upData');`
+
 [1]: /img/bVR86h
